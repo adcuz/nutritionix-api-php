@@ -33,11 +33,11 @@ namespace Adcuz\Nutritionix;
 //
 
 if ( !function_exists('curl_init') ){
-	throw new Exception('CURL is required to run the Nutritionix PHP API.');
+	throw new \Exception('CURL is required to run the Nutritionix PHP API.');
 }
 
 if ( !function_exists('json_decode') ){
-	throw new Exception('JSON Extension is required to run the Nutritionix PHP API.');
+	throw new \Exception('JSON Extension is required to run the Nutritionix PHP API.');
 }
 
 
@@ -405,28 +405,5 @@ class Client
 		if(strpos($field, 'nf_') !== false)
 			return number_format($data);
 		return $data;
-	}
-}
-
-
-class NutritionixException extends Exception
-{
-	/**
-	 * Array mapping error codes to messages
-	 */
-	public static $error_messages = array(
-		'application_not_found' => 'Invalid App ID',
-		'brand_not_found' => 'The Brand isn\'t on the Database',
-	);
-
-
-	/**
-	 * Format error message
-	 */
-	public function __toString(){
-		if ($this->message)
-			return $this->message;
-		else
-			return 'Unknown Error';
 	}
 }
