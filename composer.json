@@ -1,0 +1,16 @@
+{
+    "name": "adcuz/nutritionix-api-php",
+    "description": "Composer port for the Nutritionix PHP API wrapper.",
+    "authors": [
+        {
+            "name": "Adam Currie",
+            "email": "adamcurrie.dev@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "adcuz/nutritionix-api-php": "src"
+        }
+    }
+}
