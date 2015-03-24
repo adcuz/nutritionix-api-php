@@ -41,7 +41,7 @@ if ( !function_exists('json_decode') ){
 }
 
 
-class Nutritionix
+class Client
 {
 	private $app_id;
 	private $api_key;
