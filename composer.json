@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-0": {
-            "adcuz/nutritionix-api-php": "src"
+            "Adcuz/Nutritionix": "src"
         }
     }
 }
